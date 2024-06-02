@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.bg {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('./images/bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  height: max-content;
+  width: 60%;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(6.5px);
+  -webkit-backdrop-filter: blur(6.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.btnHolder{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 0px ;
+  width: 100%;
+}
+
+.swapBtn{
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 15px;
+  outline: none;
+  border: none;
+  letter-spacing: 2px;
+  cursor: pointer;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  background-color:  #1532efc4;
+  color: white;
+  font-weight: 400;
+  transition: all ease-in-out .3s;
+  width: 15%;
+}
+
+.swapBtn:hover{
+  background-color: #2751f9;
+}
+
+.convertBtn{
+  width: max-content;
+  margin-bottom: 10px;
+}
+
+.head{
+  color: rgba(255, 255, 255, 0.611);
+  text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
+
+
+@media screen and (max-width:1280px) {
+  .container{
+    width: 80%;
+  }
+}
+
+@media screen and (max-width:965px) {
+  .container{
+    width: 80%;
+  }
+}
+
+@media screen and (max-width:750px) {
+  .container{
+    width: 90%;
+  }
+}
+
+@media screen and (max-width:550px) {
+  .container{
+    width: 98%;
+  }
+}
+
+@media screen and (max-width:400px) {
+  .head{
+    font-size: 30px;
+  }
+  
+  .swapBtn{
+    width: 30%;
+  }
+
+  .convertBtn{
+    width: 80%;
+  }
+}
+
+@media screen and (max-width:300px) {
+  .head{
+    font-size: 20px;
+  }
+}

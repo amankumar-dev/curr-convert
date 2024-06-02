@@ -1,0 +1,113 @@
+.inputContainer {
+    background-color: white;
+    padding: 15px 30px 15px 30px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction: column; */
+    width: 70%;
+    border-radius: 10px;
+}
+
+.labelAmntBox,
+.dropCurrBox {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+}
+
+.label,
+.currType {
+    font-size: 15px;
+    color: gray;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.inputField {
+    outline: none;
+    color: black;
+    border: none;
+    font-size: 20px;
+}
+
+.inputField::placeholder{
+    font-size: 15px;
+    color: rgba(128, 128, 128, 0.552);
+}
+
+.dropCurrBox {
+    width: 25%;
+    align-items: end;
+}
+
+.selectCurr {
+    width: 55%;
+    padding: 5px 2px;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    outline: none;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:965px) {
+    .inputContainer{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:750px) {
+    .inputContainer{
+        width: 97%;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .inputContainer{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .currType{
+        font-size: 10px;
+    }
+    
+    .selectCurr{
+        width: 90%;
+    }
+
+    .dropCurrBox{
+        width: 30%;
+    }
+
+}
+
+@media screen and (max-width:300px) {
+    .label{
+        font-size: 12px;
+    }
+
+    .labelAmntBox{
+        width: 40%;
+    }
+
+    .inputField{
+        font-size: 15px;
+    }
+
+    .dropCurrBox{
+        width: 40%;
+    }
+
+    .selectCurr{
+        font-size: 12px;
+    }
+}
